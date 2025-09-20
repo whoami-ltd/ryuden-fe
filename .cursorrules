@@ -1,0 +1,135 @@
+# RyudenHub - Gaming Hub Platform
+
+## Project Overview
+RyudenHub is a comprehensive gaming hub platform that provides multiple game resources, community features, and tools to enhance the gaming experience. The platform serves as a central hub for gamers to access game information, guides, AI coaching, tracking systems, and community forums.
+
+## Core Features & Vision
+- **Game Resources**: Integration with multiple 3rd party gaming APIs and OAuth providers
+- **Game Information**: Lore, guides, updates, patches, system requirements, PS5 trophies
+- **AI Coaching**: Intelligent coaching and guidance systems
+- **Tracking Systems**: Player progress, statistics, and achievement tracking
+- **Community Forums**: User-generated content, Q&A, experience sharing
+- **Game Tools**: Interactive maps, guides, and utility tools (similar to MapGenie, Tracker.gg)
+- **Central Gaming Hub**: One-stop destination for all gaming needs
+
+## Technology Stack
+- **Framework**: Next.js 14+ with App Router
+- **Language**: TypeScript (strict mode, no 'any' types)
+- **Styling**: Tailwind CSS with custom design system
+- **Icons**: Lucide React icons
+- **Animations**: Framer Motion
+- **UI Components**: Shadcn/ui for reusable components
+- **State Management**: React hooks (useState, useReducer, useContext)
+- **Authentication**: OAuth integration with multiple providers
+
+## Code Standards & Preferences
+
+### File Naming & Structure
+- Use kebab-case for all file names and folder names
+- Split React code into separate components instead of single files
+- Organize components by feature/domain
+- Use absolute imports with proper path mapping
+
+### TypeScript Guidelines
+- Avoid using 'any' types - use proper type definitions
+- Use strict TypeScript configuration
+
+### Component Architecture
+- Build reusable, composable components using Shadcn/ui
+- Create intuitive design system with consistent spacing, colors, and typography
+- Implement proper component props interfaces
+- Use proper error boundaries and loading states
+
+### State Management
+- Use React's built-in hooks: useState, useReducer, useContext
+- Create custom hooks for complex state logic
+- Use useReducer for complex state updates with multiple actions
+- Use Context API for sharing state across components
+- Keep state as close to where it's used as possible
+
+### UI/UX Principles
+- Focus on intuitive design and excellent user experience
+- Implement responsive design for all screen sizes
+- Use consistent spacing, typography, and color schemes
+- Implement smooth animations with Framer Motion
+
+### API Integration
+- Design for multiple 3rd party API integrations
+- Implement proper error handling and loading states
+- Use proper TypeScript interfaces for API responses
+- Implement OAuth flows for various gaming platforms
+
+### Performance Considerations
+- Implement proper code splitting and lazy loading
+- Optimize images and assets
+- Use Next.js built-in optimizations
+- Implement proper caching strategies
+
+## Development Guidelines
+
+### Component Development
+- Always create reusable components when possible
+- Use proper TypeScript interfaces for props
+- Implement proper error handling
+- Add loading states for async operations
+- Use Lucide icons consistently
+
+### Styling Approach
+- Use Tailwind CSS utility classes
+- Create custom design tokens for consistency
+- Implement dark/light mode support
+- Use proper responsive breakpoints
+
+### Animation Guidelines
+- Use Framer Motion for smooth, performant animations
+- Implement micro-interactions for better UX
+- Use consistent animation timing and easing
+- Avoid over-animation that impacts performance
+
+### Data Management
+- Implement proper data fetching patterns
+- Use React Query or SWR for server state
+- Implement proper caching strategies
+- Handle loading and error states gracefully
+
+## Project Structure
+```
+src/
+├── app/                    # Next.js App Router
+├── components/            # Reusable UI components
+│   ├── ui/               # Shadcn/ui components
+│   └── features/         # Feature-specific components
+├── lib/                  # Utility functions and configurations
+├── hooks/                # Custom React hooks
+├── contexts/             # React Context providers
+├── types/                # TypeScript type definitions
+├── services/             # API services and external integrations
+└── styles/               # Global styles and design tokens
+```
+
+## Gaming Platform Integration
+- Design for multiple gaming platforms (Steam, PlayStation, Xbox, Epic, etc.)
+- Implement proper OAuth flows for each platform
+- Handle different API response formats and rate limits
+- Implement proper error handling for API failures
+
+## Community Features
+- Design forum components with proper threading
+- Implement user profiles and reputation systems
+- Create content moderation tools
+- Design responsive forum layouts
+
+## Quality Assurance
+- Write comprehensive TypeScript types
+- Implement proper error boundaries
+- Add loading states for all async operations
+- Test responsive design across devices
+
+## Future Considerations
+- Design for scalability and performance
+- Plan for internationalization (i18n)
+- Consider offline functionality where appropriate
+- Design for easy addition of new gaming platforms
+- Plan for analytics and user tracking
+
+Remember: This is a long-term project that will evolve. Focus on building a solid foundation with reusable components, proper architecture, and excellent user experience. Always prioritize code quality, performance, and maintainability.
